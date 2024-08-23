@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Step Login Form</title>
+    <!-- Links style -->
+    <link rel="stylesheet" type="text/css" href="/common files/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Links script -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <form action="" class="form">
+          <h2 class="form__title">Login</h2>
+          <h3 class="form__info">Please login to use the platform</h3>
+
+          <fieldset class="form-login fieldset">
+            <!-- <input type="email" placeholder="Enter your email" class="form-login__email field"/> -->
+            <div class="input-wrapper" data-input="1">
+              <input type="email" class="form-login__email field" />
+              <h4 class="placeholder" data-num="1">Enter your email</h4>
+            </div>
+            <div class="popup">Please fill out this field.</div>
+            <a href="#" class="form-login__femail link">Forgot email?</a>
+            <p class="form-login__caption">
+              Not your computer? Use guest mode to login privately.<a
+                href="#"
+                class="form-login__info link"
+                >Learn More</a
+              >
+            </p>
+            <div class="row">
+              <a href="#" class="form-login__register link">Create account</a>
+              <button class="form-login__next btn">Next</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-submit fieldset">
+            <!-- <input type="password" placeholder="Enter your password" class="form-submit__pass field" required> -->
+            <div class="input-wrapper" data-input="2">
+              <input type="password" class="form-submit__pass field" required />
+              <h4 class="placeholder" data-num="2">Enter your password</h4>
+            </div>
+            <div class="row">
+              <a href="#" class="form-submit__fpass link">Forgot password?</a>
+              <div class="row row--checkbox">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  class="form-submit__checkbox"
+                />
+                <label for="checkbox" class="form-submit__show"
+                  >Show password</label
+                >
+              </div>
+            </div>
+            <div class="row padding">
+              <button class="form-submit__back btn">Back</button>
+              <button type="submit" class="form-submit__login btn">
+                Login
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

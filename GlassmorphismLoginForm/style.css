@@ -1,0 +1,131 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg-color: conic-gradient(#a7aef9, #ddccf8, #f5c9d9, #cebbfa, #a7aef9);
+  --primary-color: #573b8a;
+  --light-gray: #f7f7f7;
+  --btn-hover: #6d44b8;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 300; */
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  background: var(--bg-color);
+}
+input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+/* ========= Start Mini Project ========= */
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 38rem;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.form-fieldset {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  transition: all 1s;
+}
+.form-signup {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.form-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s;
+}
+.form-signup__title {
+  color: var(--light-gray);
+  padding-bottom: 6rem;
+}
+.form__field {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: var(--light-gray);
+}
+.form-signup__name {
+}
+.form-signup__email {
+}
+.form-signup__pass {
+}
+.btn {
+  display: block;
+  width: 65%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--light-gray);
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+.form-signup__btn {
+}
+.form-login {
+  background-color: #fff;
+  border-radius: 80% / 16%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: absolute;
+  bottom: -33.5rem;
+}
+.form-login__title {
+  color: var(--primary-color);
+  padding-bottom: 8rem;
+}
+.form-login__email {
+}
+.form-login__pass {
+}
+.form-login__btn {
+}
+
+/* ACTIVE */
+.form--active {
+  bottom: 0;
+}
+.form--active > .form-title {
+  font-size: 4rem;
+}

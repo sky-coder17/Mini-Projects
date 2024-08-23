@@ -1,0 +1,188 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+:root {
+  --yellow: hsl(36, 100%, 50%);
+  --red: hsl(8, 100%, 50%);
+  --blue: hsl(240, 60%, 50%);
+  --violet: hsl(288, 60%, 50%);
+  --text-white: hsl(0, 0%, 100%);
+  --text-light-gray: hsl(0, 0%, 90%);
+  --body-bg-color: hsl(0, 0%, 0%);
+  --glass-bg-color: hsla(0, 0%, 100%, 0.05);
+  --border-color: hsla(0, 0%, 100%, 0.25);
+  --blur: blur(10px);
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-bg-color);
+  position: relative;
+}
+body::before,
+body::after {
+  content: '';
+  display: block;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+body::before {
+  bottom: -3rem;
+  left: -12rem;
+  background-color: var(--blue);
+}
+body::after {
+  top: -2rem;
+  right: -12rem;
+  background-color: var(--violet);
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* ========= Start Mini Project ========= */
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  backdrop-filter: blur(8rem);
+}
+.wrapper {
+  width: 40rem;
+  height: auto;
+  position: relative;
+}
+.wrapper::before,
+.wrapper::after,
+.shape {
+  content: '';
+  display: block;
+  border-radius: 100%;
+  background: linear-gradient(to right, var(--blue), var(--violet));
+  position: absolute;
+  z-index: -1;
+}
+.wrapper::before {
+  width: 10rem;
+  height: 10rem;
+  top: 2rem;
+  left: -5rem;
+}
+.wrapper::after {
+  width: 8rem;
+  height: 8rem;
+  bottom: -2rem;
+  right: -2rem;
+}
+.shape {
+  width: 4rem;
+  height: 4rem;
+  top: 3rem;
+  right: 3rem;
+}
+.form {
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--text-light-gray);
+  background-color: var(--glass-bg-color);
+  border: 1px solid var(--border-color);
+  backdrop-filter: var(--blur);
+  border-radius: 1rem;
+  padding: 4rem;
+  position: relative;
+}
+.form__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.form-field {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding-bottom: 1rem;
+  color: var(--text-white);
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-color);
+}
+.form-field__name {
+}
+.form-field__email {
+}
+.form-field__pass {
+}
+.m-bottom {
+  margin-bottom: 0;
+}
+.form-link {
+  background: linear-gradient(to right, var(--yellow), var(--red));
+  background-clip: text;
+  color: transparent;
+}
+.form-link__pass {
+  float: right;
+  margin-top: 1rem;
+}
+.form__btn {
+  width: 100%;
+  font-size: inherit;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  border-radius: 10rem;
+  background: linear-gradient(to right, var(--yellow), #ff2400);
+}
+.form__btn:hover {
+  opacity: 0.6;
+}
+.form__caption {
+}
+.form-link__register {
+}
+.form-link__login {
+}
+
+@media (max-width: 456px) {
+  .wrapper {
+    width: 100%;
+  }
+  body::before {
+    left: -30rem;
+  }
+  body::after {
+    right: -30rem;
+  }
+}
+@media (max-width: 761px) {
+  body::before {
+    left: -24rem;
+  }
+  body::after {
+    right: -24rem;
+  }
+}

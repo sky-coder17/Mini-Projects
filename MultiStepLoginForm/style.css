@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #0ef;
+  --bg-color: #1f293a;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* ========= Start Mini Project ========= */
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+}
+.form {
+  position: relative;
+  text-align: center;
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 1rem;
+  padding: 8rem 0;
+  overflow: clip;
+}
+.form__title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.form__info {
+  padding-top: 1rem;
+}
+.fieldset {
+  width: 100%;
+  text-align: left;
+  padding: 0 4rem;
+  transition: transform 0.5s;
+}
+.form-login {
+  transform: translateX(0);
+}
+.input-wrapper {
+  position: relative;
+  border: 0.2rem solid #343d4e;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  transition: all 0.4s;
+}
+.input-wrapper--active {
+  border: 0.2rem solid var(--primary-color);
+}
+.field {
+  width: 100%;
+  color: inherit;
+  background-color: transparent;
+  padding: 1.5rem;
+}
+.field,
+.placeholder {
+  cursor: none;
+}
+.form-login__email {
+}
+.placeholder {
+  position: absolute;
+  transform: translate(1rem, -3rem);
+  background-color: var(--bg-color);
+  padding: 0 0.5rem;
+  transition: transform 0.2s;
+}
+.placeholder--active {
+  color: var(--primary-color);
+  transform: translate(0.3rem, -5.5rem) scale(0.9);
+}
+.popup {
+  position: absolute;
+  right: 4rem;
+  color: #a62121;
+  opacity: 0;
+}
+.link {
+  display: block;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.form-login__femail {
+}
+.form-login__caption {
+  padding: 4rem 0;
+}
+.form-login__info {
+  padding-top: 1rem;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-login__register {
+}
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+}
+.form-login__next {
+}
+.form-submit {
+  transform: translateX(100%);
+  position: absolute;
+  bottom: 8rem;
+}
+.form-submit__pass {
+}
+.form-submit__fpass {
+}
+.row--checkbox {
+}
+.form-submit__checkbox {
+}
+.form-submit__show {
+  padding-left: 0.5rem;
+}
+.form-submit__back {
+  color: #fff;
+  background-color: transparent;
+  border: 0.1rem solid var(--primary-color);
+}
+.form-submit__login {
+}
+.padding {
+  padding-top: 8rem;
+}

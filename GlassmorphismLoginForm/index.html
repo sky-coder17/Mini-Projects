@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism Login Form</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="/common files/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- script -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="form">
+        <fieldset class="form-fieldset form-signup form--active" id="signup">
+          <!-- According to Semantic elements, the legend tag should be placed here, but due to the ratio of the fieldset tag to the legend tag (problem in css /styling), I use the heading tags! -->
+          <!-- <legend class="form-title form-signup__title">Sign up</legend> -->
+          <h2 class="form-title form-signup__title" data-formname="signup">
+            Sign up
+          </h2>
+          <input
+            type="text"
+            placeholder="User name"
+            class="form__field form-signup__name"
+            maxlength="8"
+            autofocus
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__field form-signup__email"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="form__field form-signup__pass"
+            required
+          />
+          <button type="submit" class="btn form-signup__btn">Sign up</button>
+        </fieldset>
+        <fieldset class="form-fieldset form-login">
+          <h2 class="form-title form-login__title" data-formname="login">
+            Login
+          </h2>
+          <input
+            type="email"
+            placeholder="Email"
+            class="form__field form-login__email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="form__field form-login__pass"
+            required
+          />
+          <button type="submit" class="btn form-login__btn">Login</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
